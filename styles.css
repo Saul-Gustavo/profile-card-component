@@ -1,0 +1,271 @@
+/* font family */
+@import url("(https://fonts.google.com/specimen/Kumbh+Sans");
+
+:root{
+
+    /* colors */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 40%);
+    /* neutral */
+    --dark-gray: hsl(0, 0%, 59%);
+    /* font size */
+    --size: 18px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--dark-cyan);
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 60%, 67%;
+    background-position: top -27rem left -15rem, bottom -44rem right -16rem;
+    font-family: 'Kumbh Sans',sans-serif;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    width: 420px;
+    background-color: white;
+    border-radius: 20px;
+    height: max-content;
+    box-shadow: 1px 1px 50px 6px rgba(63, 63, 63, 0.3);
+}
+
+.banner {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -81px;
+}
+
+.perfil-img{
+    border-radius: 50%;
+    border: 7px solid white;
+    width: 150px;
+}
+
+.more-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem 1rem;
+}
+
+.more-info p{
+    margin: 0 auto;
+}
+
+.info {
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.name{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.num{
+    font-weight: 300;
+    opacity: 0.6;
+}
+
+.location{
+    margin-top: 10px;
+    opacity: 0.6;
+}
+
+.hr{
+    margin-top: 10px;
+    height: 1px;
+    opacity: 0.40;
+    width: 420px;
+    background-color: var(--dark-gray);
+}
+
+.one{
+    font-size: var(--size);
+    text-align: center;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.two{
+    text-align: center;
+    font-size: var(--size);
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.three{
+    text-align: center;
+    font-size: var(--size);
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.infor{
+    font-family: inherit;
+    font-weight: 300;
+    opacity: 0.6;
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+} 
+
+footer .attribution > a{
+    text-decoration: none;
+    color: rgb(46, 3, 3);
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.attribution a:hover {
+    color: rgb(0, 45, 128);
+}
+
+@media screen and  (max-width: 1440px) {
+    body {
+        background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top -22rem left -14rem, bottom -40rem right -16rem;
+    }
+}
+
+/* version mobile 375px */
+
+@media screen and (max-width: 400px) {
+
+    body{
+        background-color: var(--dark-cyan);
+        background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-size: cover, cover;
+        background-position: top -24em left -31em, bottom -23em right -29em;
+        font-family: 'Kumbh Sans',sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .main{
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 20px;
+    }
+    
+    .cards{
+        width: 340px;
+        background-color: white;
+        border-radius: 20px;
+        height: 390px;
+    }
+    
+    .banner{
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+    .perfil{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -71px;
+    }
+    
+    .perfil-img{
+        border-radius: 50%;
+        border: 8px solid white;
+        width: 130px;
+    }
+    
+    .more-info{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1.5rem 1rem;
+    }
+
+    .more-info p{
+        margin: 0px auto;
+    }
+    
+    .info{
+        text-align: center;
+        padding: 11px;
+    }
+    
+    .name{
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .num{
+        font-weight: 300;
+    }
+    
+    .location{
+        margin-top: 10px;
+        font-weight: 300;
+    }
+    
+    .hr{
+        margin-top: 15px;
+        height: 1px;
+        opacity: 0.40;
+        width: 420px;
+        background-color: var(--dark-gray);
+    }
+    
+    .one{
+        font-size: var(--size);
+        text-align: center;
+        font-weight: 700;
+        font-size: 19px;
+    }
+    
+    .two{
+        text-align: center;
+        font-size: var(--size);
+        font-weight: 700;
+        font-size: 19px;
+    }
+    
+    .three{
+        text-align: center;
+        font-size: var(--size);
+        font-weight: 700;
+        font-size: 19px;
+    }
+    
+    .infor{
+        font-weight: 300;
+        font-size: 13px;
+    }
+    
+}
