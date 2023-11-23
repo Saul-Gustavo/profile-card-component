@@ -22,7 +22,7 @@
 
 body{
     background-color: var(--dark-cyan);
-    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
     background-repeat: no-repeat, no-repeat;
     background-size: 60%, 67%;
     background-position: top -27rem left -15rem, bottom -44rem right -16rem;
@@ -149,7 +149,7 @@ footer .attribution > a{
 
 @media screen and  (max-width: 1440px) {
     body {
-        background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+        background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
         background-repeat: no-repeat, no-repeat;
         background-position: top -22rem left -14rem, bottom -40rem right -16rem;
     }
@@ -161,7 +161,7 @@ footer .attribution > a{
 
     body{
         background-color: var(--dark-cyan);
-        background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+        background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
         background-repeat: no-repeat, no-repeat;
         background-size: cover, cover;
         background-position: top -24em left -31em, bottom -23em right -29em;
